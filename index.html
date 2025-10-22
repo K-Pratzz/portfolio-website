@@ -4,36 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="top">
     <header>
-        <h1>KUMARI PRATIBHA</h1>
+        <div id="h">
+        <h1 id="m"> Welcome to My Portfolio</h1>
         <nav>
-        <UL>
-            <LI><a href="/index.html">About</a></LI>
-            <li><a href="/index.html">Projects</a></li>
-            <li><a href="/index.html">Contact</a></li>
-        </UL>
+        
+        <a  class="y" href="/index.html">About</a></LI>
+        <a  class="y" href="/index.html">Projects</a></li>
+        <a  class="y" href="/index.html">Contact</a></li>
+    
         </nav>
-        <h2>Welcome to My Portfolio</h2>
-        <p>Hello! I am a Web Development Student. This is my Personal Portfolio Website.</p>
+        </div>
+ 
     </header>
     
     <main>
-        <h1>About Me</h1>
+        <div id="a"><h1>About Me</h1></div>
         <img src="student.png" width="300px" alt="Female Student">
-        <p>I am Passionate about learning Web Development and building creative projects</p>
+        <p id="pp">Hello! I am a Web Development Student. This is my Personal Portfolio Website. <br>I am Passionate about learning Web Development and building creative projects</p>
+        <br>
+        <hr>
+        <br>
         <h1>My Projects</h1>
-        <ul>
-            <li><h2>Portfolio Website : </h2> A personal one-page website to showcase your bio,skills and contact details</li>
-            <li><h2>Password Strength Detector : </h2> A web based application that checks the strength of a typed password.</li>
-        </ul>
+        
+           <div class="pr"><h2 class="o">Portfolio Website : </h2> A personal one-page website to showcase your bio,skills and contact details</div><br>
+            <div class="pr"><h2 class="o">Password Strength Detector : </h2> A web based application that checks the strength of a typed password.</div><br>
+    
         <h1>Technical Skills</h1>
-        <table border="2" cellpadding="20">
-            <thead>
+        <table id="table" border="2" style="border-color: red;" cellpadding="20">
+            <thead id="th">
                 <tr>
-                    <th>Skill</th>
-                    <th>Level</th>
+                    <td class="tt">Skill</td>
+                    <td class="tt">Level</td>
                 </tr>
             </thead>
             <tbody>
@@ -53,23 +61,49 @@
         </table>
     </main>
     <footer>
-        <br>
-        <address>
-            <a href="mailto: kp939331@gmail.com">Email Us</a><br><br>
-            <a href="https://www.linkedin.com/in/kumari-pratibha-90ab14372?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> Linkedin</a><br><br>
-            <a href="https://www.instagram.com/k_pratzz__?igsh=YjIwa2VzZWJwYm9o">Instagram</a>
-        </address>
-        <br>
+    
         <h1>Contact Me</h1>
         <form>
-            <label for="n">Name : </label>
-            <input name="name" type="name" id="n" autofocus placeholder="Write your name"><br><br>
-            <label for="e">Email : </label>
-            <input name="email" type="email" id="e" autofocus placeholder="Enter your Email"><br><br>
-            <label for="m">Type Your Message : </label>
-            <textarea id="m" name="message" placeholder="Enter your message" autofocus type="text" rows="4" cols="20"></textarea><br><br>
-            <button type="submit">Send</button>
+        <table border="2" style="border-color: blue;" cellpadding="10">
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="n">Name : </label>
+                    </td>
+                    <td>
+                        <input name="name" type="name" id="n" autofocus placeholder="Write your name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="e">Email : </label>
+                    </td>
+                    <td>
+                        <input name="email" type="email" id="e" autofocus placeholder="Enter your Email"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="m">Type Your Message : </label>
+                    </td>
+                    <td>
+                        <textarea id="m" name="message" placeholder="Enter your message" autofocus type="text" rows="1" cols="25"></textarea>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">
+                        <button  style="background-color: blue" type="submit">Send</button>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
         </form>
     </footer>
+    <div id="la">
+            <a href="#top">Back to Top</a>
+    </div>
+    <br>
+    <div style="background-color: blue; height: 10px; width: 100vw;"></div>
 </body>
 </html>
